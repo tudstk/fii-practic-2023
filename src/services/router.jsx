@@ -3,6 +3,8 @@ import { createBrowserRouter } from "react-router-dom"
 import Home from "../pages/Home"
 import Login from "../pages/Login"
 import Register from "../pages/Register"
+import Profile from "../pages/Profile"
+import Find from "../pages/Find"
 
 export const router = createBrowserRouter([
   {
@@ -22,5 +24,18 @@ export const router = createBrowserRouter([
         element: <Register />,
       },
     ],
+  },
+  {
+    path: "profile",
+    children: [
+      {
+        path: ":id",
+        element: <Profile />,
+      },
+    ],
+  },
+  {
+    path: "find",
+    element: <Find />,
   },
 ])
