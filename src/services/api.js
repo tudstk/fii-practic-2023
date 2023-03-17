@@ -1,3 +1,3 @@
 export const fetchAllMemes = () => {
-    console.log("salut");
+  console.log("salut")
 }
